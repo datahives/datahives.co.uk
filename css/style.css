@@ -1,0 +1,143 @@
+#page1 {
+  /*background: #F9C11B;*/
+  background: -webkit-linear-gradient(to bottom,
+    #F9C11B 20%,
+    white 45%,
+    #F9C11B 80%);
+  background: -moz-linear-gradient(to bottom,
+    #F9C11B 20%,
+    white 45%,
+    #F9C11B 80%);
+  background: -ms-linear-gradient(to bottom,
+    #F9C11B 20%,
+    white 45%,
+    #F9C11B 80%);
+  background: linear-gradient(to bottom,
+    #F9C11B 20%,
+    white 45%,
+    #F9C11B 80%);
+  text-align: center;
+}
+
+#main-logo {
+  width: 80%;
+  max-width: 450px;
+}
+
+.handwrite {
+  font-size: 3em;
+  font-weight: lighter;
+  font-family: 'Just Me Again Down Here', cursive;
+}
+
+#page2 {
+  background-image: url("/img/background2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.promote {
+  text-align: left;
+  font-size: 1.2em;
+  color: white;
+}
+
+.info-panel {
+  padding: 20px;
+  text-align: center;
+}
+
+.info-panel h1 {
+  font-size: 1.2em;
+  font-weight: 200;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.info-panel a {
+  text-decoration: none;
+}
+
+.info-body {
+  text-align: left;
+  font-weight: lighter;
+}
+
+#page3a {
+  color: black;
+  /*height: 50%;*/
+  background: #F9C11B;
+}
+
+#page3a a {
+  color: black;
+}
+
+#page3b {
+  color: white;
+  /*height: 50%;*/
+  background: #2457A5;
+}
+
+#page3b a {
+  color: white;
+}
+
+#page4a {
+  /*height: 50%;*/
+  background: white;
+}
+
+#page4b {
+  /*height: 50%;*/
+  background: #F9C11B;
+}
+
+.pure-form {
+  text-align: left;
+}
+
+.pure-form input{
+  width: 75%;
+}
+.pure-form textarea{
+  width: 75%;
+  height: 150px;
+  resize: none;
+}
+
+.footer-box {
+  position: relative;
+  top: 70%;
+  text-align: left;
+  font-weight: lighter;
+}
+
+@media (min-width: 48em){
+  .info-panel{
+    padding: 100px;
+  }
+  .info-panel h1 {
+    margin-top: 2em;
+    margin-bottom: 3em;
+  }
+  #page3a{
+    height: 100%;
+  }
+  #page3b{
+    height: 100%;
+  }
+  .info-body{
+    line-height: 150%;
+  }
+  #page4a{
+    height: 100%;
+  }
+  #page4b{
+    height: 100%;
+  }
+  .pure-form{
+    margin-top: 20%;
+  }
+}

@@ -1,0 +1,272 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: #"Open Sans", Arial, sans-serif;
+}
+
+.pure-img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+ * --- MENU STYLES ---
+ */
+
+.home-menu {
+  padding-top: 0em;
+  padding-bottom: 0em;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-bottom: 1em;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  background: #fff;
+  z-index: 4;
+  border-bottom: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.home-menu.open {
+  height: 12em; /* change this accordingly */
+}
+
+.custom-toggle {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: none;
+}
+
+.custom-toggle span {
+  background-color: #574712;
+  display: block;
+  width: 24px;
+  height: 2px;
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: 5px;
+  top: 18px;
+  right: 7px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.custom-toggle.x span:first-child {
+  transform-origin: 0% 0%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg) translate(-2px, -1px);;
+}
+
+.custom-toggle.x span:nth-last-child(1){
+  transform-origin: 0% 100%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg) translate(-1px, 0px);;
+}
+
+.custom-toggle.x span:nth-last-child(2){
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2,0.2);
+}
+
+.vertical-align-center{
+  vertical-align: middle;
+  position: relative;
+  top: 15px;;
+}
+
+.pure-menu.pure-menu-fixed{
+  border-bottom: none;
+  z-index: 4;
+}
+
+.home-menu .pure-menu-heading{
+  color: white;
+  font-weight: 400;
+  font-size: 120%;
+}
+
+.home-menu .pure-menu-heading img{
+  height: 40px;
+}
+
+.home-menu .pure-menu-selected a{
+  color: white;
+}
+
+.home-menu a {
+  color: #574712;
+}
+
+.home-menu li a:hover,
+.home-menu li a:focus {
+  background: none;
+  border: none;
+  color: #F9C11B;
+}
+
+@media (max-width: 47.999em){
+  .custom-toggle {
+    display: block;
+  }
+
+  #menu-list{
+    display: none;
+  }
+
+  .vertical-align-center {
+    top: 0px;
+  }
+
+  .home-menu.open #menu-list{
+    display: block;
+  }
+}
+
+@media (min-width: 48em) {
+  .home-menu {
+    text-align: left;
+  }
+
+  .home-menu .pure-menu-heading{
+    display: inline-block;
+  }
+
+  .home-menu ul{
+    float: right;
+    display: inline-block;
+  }
+}
+
+/*
+ * --- SPLASH STYLES ---
+ */
+
+ .splash-container {
+   background: #F9C11B;
+   z-index: 1;
+   overflow: hidden;
+   width: 100%;
+   height: 88%;
+   top: 0;
+   left: 0;
+   position: fixed !important;
+ }
+
+ .splash {
+   width: 80%;
+   height: 50%;
+   margin: auto;
+   position: absolute;
+   top: 100px; left: 0; bottom: 0; right: 0;
+   text-align: center;
+   /*text-transform: uppercase;*/
+ }
+
+ .splash-head {
+   font-size: 2.4em;
+   font-weight: bold;
+   color: #574712;
+   /*border: 3px solid white;*/
+   padding: 0.5em 0.5em;
+   font-weight: 200;
+   /*border-radius: 5px;*/
+   /*line-height: 1em;*/
+ }
+
+ .splash-subhead {
+   color: #574712;;
+   letter-spacing: 0.05em;
+   opacity: 0.8;
+ }
+
+ /*
+  * --- CONTENT STYLES ---
+  */
+.content-wrapper {
+  /* used for scroll-over effect */
+  position: absolute;
+  top: 87%;
+  width: 100%;
+  min-height: 12%;
+  z-index: 2;
+  background: white;
+}
+
+.content {
+  color: #888888;
+  padding-top: 2em;
+}
+
+.content h1 {
+  color: #574712;
+  margin: 1em 0 1em;
+}
+
+.content h2 {
+  color: #574712;
+}
+
+.content .ribbon {
+  color: white;
+}
+
+.content .ribbon h1,h2{
+  color: #F9C11B;
+}
+
+.ribbon {
+  background: #2457A5;
+}
+
+.l-box {
+    padding: 3em;
+}
+
+.l-box-lrg {
+    padding: 4em;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.is-center {
+  text-align: center;
+}
+
+/*
+ * --- FOOTER STYLES ---
+ */
+
+ .footer {
+   background: #2457A5;
+   color: white;
+   text-align: center;
+   padding-top: 2em;
+   padding-bottom: 2em;
+ }
+
+/*
+ * --- TABLET MEDIA QUERIES ---
+ */
+@media (min-width: 48em) {
+
+
+}
+
+/*
+ * --- DESKTOP MEDIA QUERIES ---
+ */
+@media (min-width: 78em) {
+
+}
